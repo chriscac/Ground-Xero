@@ -1,0 +1,235 @@
+{% extends "base.html" %}
+{% block content %}
+
+  
+	<div class="container">
+
+
+		<div class="row">
+			<div class="col-sm-12">
+				<ol class="breadcrumb ">
+					<li><a href="#">General Settings</a></li>
+					<li><a href="#">Fixed Asset Settings</a></li>
+					<li class="active">Asset Types</li>
+				</ol>
+				<hr>
+				<h2 class="">Edit Asset Type</h2>
+			</div>
+		</div>
+
+
+		<div class="row">
+			<div class="col-sm-12">
+				<form role="form">
+
+					<hr>
+
+					<h4 class="mrgbtm-1">Type &amp Accounts</h4>
+				  
+					<div class="row">
+						<div class="form-group col-sm-4">
+					    	<label for="exampleInputEmail1">Asset Type</label>
+					    	<input type="text" class="form-control " id="assetType" placeholder="The types of assets within this group...">
+						</div>
+				  	</div>
+
+					<div class="row">
+						<div class="col-sm-4">
+							<div class="form-group">
+								<label for="exampleInputPassword1">Asset Account</label>
+								<select class="form-control" >
+									<option >Select One</option>
+									<option>2</option>
+									<option>3</option>
+									<option>4</option>
+									<option>5</option>
+								</select>
+							</div>
+						</div>
+
+						<div class="col-sm-4">
+							<div class="form-group">
+								<label for="exampleInputPassword1">Accumulated Depreciation Account</label>
+								<select class="form-control" >
+									<option >Select One</option>
+									<option>2</option>
+									<option>3</option>
+									<option>4</option>
+									<option>5</option>
+								</select>
+							</div>
+						</div>
+
+						<div class="col-sm-4">
+							<div class="form-group">
+								<label for="exampleInputPassword1">Depreciation Expense Account</label>
+								<select class="form-control" >
+									<option >Select One</option>
+									<option>2</option>
+									<option>3</option>
+									<option>4</option>
+									<option>5</option>
+								</select>
+							</div>
+						</div>
+					</div>
+
+
+
+					<hr>
+
+					<h4 class="mrgbtm-1">Book Depreciation</h4>
+
+					<div class="row">
+						<div class="col-sm-4">
+							<div class="form-group">
+								<label>Depreciation Method</label>
+								<select class="form-control" >
+									<option>Select One</option>
+									<option>2</option>
+									<option>3</option>
+									<option>4</option>
+									<option>5</option>
+								</select>
+							</div>
+						</div>
+
+						<div class="col-sm-4">
+							<div class="form-group">
+								<label>Averaging Method</label>
+								<select class="form-control" >
+									<option >Select One</option>
+									<option>2</option>
+									<option>3</option>
+									<option>4</option>
+									<option>5</option>
+								</select>
+							</div>
+						</div>
+
+						<div class="col-sm-2">
+							<div class="form-group ">
+								<label>Rate</label>
+							    
+							    <div class="radio pull-left padtop-small">
+								    <label class="radio-inline">
+								    	<input type="radio"> 
+								    </label>
+							    </div>
+					        	<div class="input-group">
+							    	<input class="form-control" type="text" placeholder="000.00">
+							    	<div class="input-group-addon">%</div>
+							    </div>
+							</div>
+						</div>
+
+						<div class="col-sm-2">
+							<div class="form-group">
+								<label>Effective Life</label>
+							    
+							    <div class="radio pull-left padtop-small">
+								    <label class="radio-inline">
+								    	<input type="radio"> 
+								    </label>
+							    </div>
+					        	<div class="input-group">
+							    	<input class="form-control" type="text" placeholder="00.00">
+							    	<div class="input-group-addon">Yrs</div>
+							    </div>
+							</div>
+						</div>
+					</div>
+
+
+
+					<hr>
+
+					<h4 class="mrgbtm-1">Tax Depreciation</h4>
+
+
+					<div class="row">
+						<div class="col-sm-4">
+							<div class="form-group">
+								<label>Depreciation Method</label>
+								<select class="form-control" >
+									<option>Select One</option>
+									<option>2</option>
+									<option>3</option>
+									<option>4</option>
+									<option>5</option>
+								</select>
+							</div>
+						</div>
+
+						<div class="col-sm-4">
+							<div class="form-group">
+								<label>Averaging Method</label>
+								<select class="form-control" >
+									<option >Select One</option>
+									<option>2</option>
+									<option>3</option>
+									<option>4</option>
+									<option>5</option>
+								</select>
+							</div>
+						</div>
+
+
+							<div class="col-sm-2">
+								<div class="form-group ">
+									<label>Rate</label>
+								    
+								    <div class="radio pull-left padtop-small">
+									    <label class="radio-inline">
+									    	<input type="radio"> 
+									    </label>
+								    </div>
+						        	<div class="input-group">
+								    	<input class="form-control" type="text" placeholder="000.00">
+								    	<div class="input-group-addon">%</div>
+								    </div>
+								</div>
+							</div>
+
+							<div class="col-sm-2">
+								<div class="form-group">
+									<label>Effective Life</label>
+								    
+								    <div class="radio pull-left padtop-small">
+									    <label class="radio-inline">
+									    	<input type="radio"> 
+									    </label>
+								    </div>
+						        	<div class="input-group">
+								    	<input class="form-control" type="text" placeholder="00.00">
+								    	<div class="input-group-addon">Yrs</div>
+								    </div>
+								</div>
+							</div>
+
+
+					</div>
+				
+					<div class="form-group">
+						<label class="checkbox-inline">
+						  <input type="checkbox" id="inlineCheckbox1" value="option1"> Intangible
+						</label>
+						<label class="checkbox-inline">
+						  <input type="checkbox" id="inlineCheckbox1" value="option1"> Intangible
+						</label>
+					</div>
+
+				</form>
+
+				<button id="submit" class="btn btn-success">Save</button>
+				<button id="submit" class="btn btn-default">Cancel</button>
+
+			</div><!-- /.cols -->
+		</div><!-- /.row -->
+
+	</div><!-- /.container -->
+
+
+
+
+{% endblock content%}
