@@ -1,5 +1,32 @@
 /*	Components
 ___________________________________________________________*/
+.navbar-default {
+  background-color: #1696c5;
+  border-color: white;
+  color: #1696c5; }
+  .navbar-default .navbar-brand {
+    color: white; }
+    .navbar-default .navbar-brand:hover, .navbar-default .navbar-brand:focus {
+      color: white;
+      background-color: #137fa7; }
+  .navbar-default hr {
+    border-top: solid 1px #137fa7;
+    opacity: .4;
+    margin-bottom: -1px;
+    margin-top: 0px; }
+  .navbar-default .navbar-nav > li > a {
+    color: white; }
+    .navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus {
+      color: white;
+      background-color: #137fa7; }
+  .navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus {
+    color: #1696c5;
+    background-color: white; }
+
+.navbar-secondary {
+  width: 100%;
+  background-color: #f4f6f7; }
+
 /*Margins
 
 These modifier classes can be applied 
@@ -66,6 +93,12 @@ ___________________________________________________________*/
 
 /*	Padding
 ___________________________________________________________*/
+.padtop-none {
+  padding-top: 0; }
+
+.padbtm-none {
+  padding-bottom: 0; }
+
 .padtop-small {
   padding-top: 12px; }
 
@@ -188,3 +221,15 @@ ___________________________________________________________*/
   background-color: none;
   height: 96px;
   margin-bottom: 24px; }
+
+/*	Breadcrumbs
+___________________________________________________________*/
+.breadcrumb {
+  padding-left: 0px;
+  padding-right: 0px;
+  background-color: #f4f6f7; }
+  .breadcrumb > li + li:before {
+    content: "\e072";
+    font-family: 'Glyphicons Halflings';
+    -webkit-font-smoothing: antialiased;
+    font-size: 8px; }

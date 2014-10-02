@@ -10,15 +10,20 @@
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
 
+		<!-- Animate.css -->
+		<link rel="stylesheet" href="{% static '/css/animate.css' %}">
+
 		<link rel="shortcut icon" href="{% static '/images/favicon.ico' %}">
 		<link rel="stylesheet" href="{% static '/css/style.css' %}">
+
+
 
 		{% block header %}
 		<title>{% block title %}Default{% endblock %}</title>
 		{% endblock header %}
 	</head>
 
-	<body style="padding-top: 70px;">
+	<body style="padding-top: 100px;">
 
 		{% include 'nav.html' %}
 
@@ -32,9 +37,8 @@
 		<script src="{% static '/js/uilang.js' %}"></script>
 		{% endblock scripts%}
 
-	<code>
-		clicking on "#submit" adds class "hidden" on ".form-group"
-	</code>
+
+		{% include 'uilang.html' %}
 
 	</body>
 </html>

@@ -93,6 +93,14 @@ ___________________________________________________________*/
 /*	Padding
 ___________________________________________________________*/
 
+.padtop-none{
+	padding-top: 0;
+}
+
+.padbtm-none{
+	padding-bottom: 0;
+}
+
 .padtop-small{
 	padding-top: $baseunit /2;
  }

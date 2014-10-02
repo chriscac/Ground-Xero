@@ -1,0 +1,19 @@
+
+/*	Breadcrumbs
+___________________________________________________________*/
+
+.breadcrumb {
+  padding-left: 0px;
+  padding-right: 0px;
+  background-color: $breadcrumb-bg;
+
+    > li {
+    + li:before {
+		content: "\e072"; // Unicode space added since inline-block means non-collapsing white-space
+		font-family: 'Glyphicons Halflings';
+		-webkit-font-smoothing: antialiased;
+		font-size: 8px;
+    }
+  }
+
+}

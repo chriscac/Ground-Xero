@@ -1,4 +1,89 @@
 
+//	Colours
+// ___________________________________________________________
+
+
+$primary-color:							#1696C5;
+$brand-color: 							#00B7E2;
+
+
+$grey-dark: 							#999999;
+$grey-mid: 								#E6E6E6;
+$grey-light: 							#f4f6f7;
+
+
+
+
+
+//	Navbar
+
+$navbar-default-bg:						$primary-color !default;
+$navbar-default-color:					$primary-color !default;
+$navbar-default-border:					white;
+$navbar-default-link-color:				white;
+$navbar-default-link-hover-color:		$navbar-default-link-color;
+$navbar-default-link-hover-bg:			darken($navbar-default-bg, 6.5%) !default;
+$navbar-default-link-active-color:		$primary-color;
+$navbar-default-link-active-bg:			white;
+
+
+$navbar-default-brand-color:			white;
+$navbar-default-brand-hover-bg:			$navbar-default-link-hover-bg;
+$navbar-default-brand-hover-color:		$navbar-default-brand-color;
+
+
+//	Navbar Secondary 
+$navbar-secondary-bg:					$grey-light;
+
+$breadcrumb-bg:							$navbar-secondary-bg;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 //	Baseunit
 // ___________________________________________________________
 
