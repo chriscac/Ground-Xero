@@ -3,15 +3,13 @@
 // ___________________________________________________________
 
 
-$primary-color:							#1696C5;
+$primary-color:							#1890c0;
 $brand-color: 							#00B7E2;
 
 
 $grey-dark: 							#999999;
 $grey-mid: 								#E6E6E6;
 $grey-light: 							#f4f6f7;
-
-
 
 
 
@@ -34,8 +32,9 @@ $navbar-default-brand-hover-color:		$navbar-default-brand-color;
 
 //	Navbar Secondary 
 $navbar-secondary-bg:					$grey-light;
-
-$breadcrumb-bg:							$navbar-secondary-bg;
+$breadcrumb-bg:							transparent;
+$breadcrumb-seperator-color:			$grey-dark;
+$breadcrumb-active-color:				$grey-dark;
 
 
 

@@ -3,17 +3,26 @@
 ___________________________________________________________*/
 
 .breadcrumb {
-  padding-left: 0px;
-  padding-right: 0px;
-  background-color: $breadcrumb-bg;
+	font-size: 10px;
+	line-height: 1;
+	padding-left: 0px;
+	padding-right: 0px;
+	background-color: $breadcrumb-bg;
+	margin-bottom: 0px;
 
     > li {
-    + li:before {
-		content: "\e072"; // Unicode space added since inline-block means non-collapsing white-space
-		font-family: 'Glyphicons Halflings';
-		-webkit-font-smoothing: antialiased;
-		font-size: 8px;
-    }
-  }
+    	color: red;
+	    
+	    + li:before {
+			content: "\e072"; // Unicode space added since inline-block means non-collapsing white-space
+			font-family: 'Glyphicons Halflings';
+			-webkit-font-smoothing: antialiased;
+			font-size: 6px;
+			color: $breadcrumb-seperator-color;
+		}
+	}	
 
+	> .active {
+		color: $breadcrumb-active-color;
+	}
 }

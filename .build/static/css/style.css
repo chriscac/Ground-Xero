@@ -1,16 +1,23 @@
 /*	Components
 ___________________________________________________________*/
+/*	Scaffolding
+___________________________________________________________*/
+a {
+  color: #1890c0; }
+  a:hover, a:focus {
+    color: #147aa3; }
+
 .navbar-default {
-  background-color: #1696c5;
+  background-color: #1890c0;
   border-color: white;
-  color: #1696c5; }
+  color: #1890c0; }
   .navbar-default .navbar-brand {
     color: white; }
     .navbar-default .navbar-brand:hover, .navbar-default .navbar-brand:focus {
       color: white;
-      background-color: #137fa7; }
+      background-color: #147aa3; }
   .navbar-default hr {
-    border-top: solid 1px #137fa7;
+    border-top: solid 1px #147aa3;
     opacity: .4;
     margin-bottom: -1px;
     margin-top: 0px; }
@@ -18,14 +25,30 @@ ___________________________________________________________*/
     color: white; }
     .navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus {
       color: white;
-      background-color: #137fa7; }
+      background-color: #147aa3; }
   .navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus {
-    color: #1696c5;
+    color: #1890c0;
     background-color: white; }
 
 .navbar-secondary {
   width: 100%;
-  background-color: #f4f6f7; }
+  padding-top: 5.33333px;
+  padding-bottom: 5.33333px;
+  border-bottom: 1px solid #e6e6e6;
+  background-color: #f4f6f7;
+  /* Fallback Color */
+  background-image: -webkit-gradient(linear, left top, left bottom, from(white), to(#f4f6f7));
+  /* Saf4+, Chrome */
+  background-image: -webkit-linear-gradient(top, white, #f4f6f7);
+  /* Chrome 10+, Saf5.1+, iOS 5+ */
+  background-image: -moz-linear-gradient(top, white, #f4f6f7);
+  /* FF3.6 */
+  background-image: -ms-linear-gradient(top, white, #f4f6f7);
+  /* IE10 */
+  background-image: -o-linear-gradient(top, white, #f4f6f7);
+  /* Opera 11.10+ */
+  background-image: linear-gradient(top, white, #f4f6f7);
+  filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0,StartColorStr='white', EndColorStr='#f4f6f7'); }
 
 /*Margins
 
@@ -225,11 +248,19 @@ ___________________________________________________________*/
 /*	Breadcrumbs
 ___________________________________________________________*/
 .breadcrumb {
+  font-size: 10px;
+  line-height: 1;
   padding-left: 0px;
   padding-right: 0px;
-  background-color: #f4f6f7; }
-  .breadcrumb > li + li:before {
-    content: "\e072";
-    font-family: 'Glyphicons Halflings';
-    -webkit-font-smoothing: antialiased;
-    font-size: 8px; }
+  background-color: transparent;
+  margin-bottom: 0px; }
+  .breadcrumb > li {
+    color: red; }
+    .breadcrumb > li + li:before {
+      content: "\e072";
+      font-family: 'Glyphicons Halflings';
+      -webkit-font-smoothing: antialiased;
+      font-size: 6px;
+      color: #999999; }
+  .breadcrumb > .active {
+    color: #999999; }
