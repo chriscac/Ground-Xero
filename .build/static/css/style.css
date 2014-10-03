@@ -34,21 +34,22 @@ a {
   width: 100%;
   padding-top: 5.33333px;
   padding-bottom: 5.33333px;
+  margin-bottom: 24px;
   border-bottom: 1px solid #e6e6e6;
-  background-color: #f4f6f7;
+  background-color: #fafbfb;
   /* Fallback Color */
-  background-image: -webkit-gradient(linear, left top, left bottom, from(white), to(#f4f6f7));
+  background-image: -webkit-gradient(linear, left top, left bottom, from(white), to(#fafbfb));
   /* Saf4+, Chrome */
-  background-image: -webkit-linear-gradient(top, white, #f4f6f7);
+  background-image: -webkit-linear-gradient(top, white, #fafbfb);
   /* Chrome 10+, Saf5.1+, iOS 5+ */
-  background-image: -moz-linear-gradient(top, white, #f4f6f7);
+  background-image: -moz-linear-gradient(top, white, #fafbfb);
   /* FF3.6 */
-  background-image: -ms-linear-gradient(top, white, #f4f6f7);
+  background-image: -ms-linear-gradient(top, white, #fafbfb);
   /* IE10 */
-  background-image: -o-linear-gradient(top, white, #f4f6f7);
+  background-image: -o-linear-gradient(top, white, #fafbfb);
   /* Opera 11.10+ */
-  background-image: linear-gradient(top, white, #f4f6f7);
-  filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0,StartColorStr='white', EndColorStr='#f4f6f7'); }
+  background-image: linear-gradient(top, white, #fafbfb);
+  filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0,StartColorStr='white', EndColorStr='#fafbfb'); }
 
 /*Margins
 
@@ -257,10 +258,82 @@ ___________________________________________________________*/
   .breadcrumb > li {
     color: red; }
     .breadcrumb > li + li:before {
-      content: "\e072";
+      content: "\e080";
       font-family: 'Glyphicons Halflings';
       -webkit-font-smoothing: antialiased;
       font-size: 6px;
       color: #999999; }
   .breadcrumb > .active {
     color: #999999; }
+
+/*	Panels
+___________________________________________________________*/
+.panel-large .panel-heading {
+  padding: 16px 15px; }
+
+.panel-white .panel-heading {
+  background-color: white; }
+
+.panel-body-grey {
+  background-color: #fafbfb; }
+
+.panel-footer-white {
+  background-color: white; }
+
+.panel-connected {
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+  border-top-right-radius: 0;
+  border-top-left-radius: 0;
+  margin-bottom: -1px; }
+  .panel-connected .panel-title {
+    border-bottom: 1px solid #ebeeef;
+    padding-bottom: 16px; }
+  .panel-connected .panel-heading {
+    padding: 16px 15px 0px 15px;
+    border-bottom-width: 0px;
+    background-color: #fafbfb;
+    /* Fallback Color */
+    background-image: -webkit-gradient(linear, left top, left bottom, from(white), to(#fafbfb));
+    /* Saf4+, Chrome */
+    background-image: -webkit-linear-gradient(top, white, #fafbfb);
+    /* Chrome 10+, Saf5.1+, iOS 5+ */
+    background-image: -moz-linear-gradient(top, white, #fafbfb);
+    /* FF3.6 */
+    background-image: -ms-linear-gradient(top, white, #fafbfb);
+    /* IE10 */
+    background-image: -o-linear-gradient(top, white, #fafbfb);
+    /* Opera 11.10+ */
+    background-image: linear-gradient(top, white, #fafbfb);
+    filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0,StartColorStr='white', EndColorStr='#fafbfb'); }
+
+.panel-connected:first-child {
+  border-top-right-radius: 5px;
+  border-top-left-radius: 5px; }
+  .panel-connected:first-child .panel-title {
+    border-bottom: 0px solid #ebeeef;
+    padding-bottom: 0px; }
+  .panel-connected:first-child .panel-heading {
+    padding: 16px 15px;
+    border-bottom-width: 1px;
+    background-color: white;
+    /* Fallback Color */
+    background-image: -webkit-gradient(linear, left top, left bottom, from(white), to(white));
+    /* Saf4+, Chrome */
+    background-image: -webkit-linear-gradient(top, white, white);
+    /* Chrome 10+, Saf5.1+, iOS 5+ */
+    background-image: -moz-linear-gradient(top, white, white);
+    /* FF3.6 */
+    background-image: -ms-linear-gradient(top, white, white);
+    /* IE10 */
+    background-image: -o-linear-gradient(top, white, white);
+    /* Opera 11.10+ */
+    background-image: linear-gradient(top, white, white);
+    filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0,StartColorStr='white', EndColorStr='white'); }
+
+.panel-connected:last-child {
+  border-bottom-right-radius: 5px;
+  border-bottom-left-radius: 5px; }
+
+.opacity-50 {
+  opacity: 0.5; }
