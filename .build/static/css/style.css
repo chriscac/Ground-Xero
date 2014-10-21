@@ -36,20 +36,20 @@ a {
   padding-bottom: 5.33333px;
   margin-bottom: 24px;
   border-bottom: 1px solid #e6e6e6;
-  background-color: #fafbfb;
+  background-color: #f4f6f6;
   /* Fallback Color */
-  background-image: -webkit-gradient(linear, left top, left bottom, from(white), to(#fafbfb));
+  background-image: -webkit-gradient(linear, left top, left bottom, from(white), to(#f4f6f6));
   /* Saf4+, Chrome */
-  background-image: -webkit-linear-gradient(top, white, #fafbfb);
+  background-image: -webkit-linear-gradient(top, white, #f4f6f6);
   /* Chrome 10+, Saf5.1+, iOS 5+ */
-  background-image: -moz-linear-gradient(top, white, #fafbfb);
+  background-image: -moz-linear-gradient(top, white, #f4f6f6);
   /* FF3.6 */
-  background-image: -ms-linear-gradient(top, white, #fafbfb);
+  background-image: -ms-linear-gradient(top, white, #f4f6f6);
   /* IE10 */
-  background-image: -o-linear-gradient(top, white, #fafbfb);
+  background-image: -o-linear-gradient(top, white, #f4f6f6);
   /* Opera 11.10+ */
-  background-image: linear-gradient(top, white, #fafbfb);
-  filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0,StartColorStr='white', EndColorStr='#fafbfb'); }
+  background-image: linear-gradient(top, white, #f4f6f6);
+  filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0,StartColorStr='white', EndColorStr='#f4f6f6'); }
 
 /*Margins
 
@@ -334,6 +334,41 @@ ___________________________________________________________*/
 .panel-connected:last-child {
   border-bottom-right-radius: 5px;
   border-bottom-left-radius: 5px; }
+
+.btn-link {
+  color: #1890c0; }
+  .btn-link:hover, .btn-link:focus {
+    color: #147aa3; }
+
+.table {
+  border: 1px solid #e6e6e6;
+  border-radius: 8px; }
+
+.table > thead > tr > td,
+.table > tbody > tr > td,
+.table > tfoot > tr > td {
+  padding-top: 12px;
+  padding-bottom: 12px; }
+
+.table > thead,
+.table > tr {
+  background-color: #fafbfb;
+  border-bottom: 1px; }
+
+.table-hover > tbody > tr:hover > td,
+.table-hover > tbody > tr:hover > th {
+  background-color: #eef9fd;
+  border-top: 1px solid #dcf2fb;
+  border-bottom: 1px solid #dcf2fb;
+  cursor: pointer; }
+
+.table.rowlink td:not(.rowlink-skip), .table .rowlink td:not(.rowlink-skip) {
+  cursor: pointer; }
+
+.table.rowlink td:not(.rowlink-skip) a, .table .rowlink td:not(.rowlink-skip) a {
+  color: inherit;
+  font: inherit;
+  text-decoration: inherit; }
 
 .opacity-50 {
   opacity: 0.5; }

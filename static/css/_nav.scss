@@ -57,7 +57,7 @@
 	margin-bottom: $baseunit;
 	
 	border-bottom: 1px solid $grey-mid;
-	@include linear-gradient(white, $grey-light); // Stick in your favourite HEX colours
+	@include linear-gradient(white, darken($grey-light, 2%)); // Stick in your favourite HEX colours
 
 }
 
