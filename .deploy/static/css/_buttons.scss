@@ -1,0 +1,18 @@
+
+
+
+// Link buttons
+// -------------------------
+
+// Make a button look and behave like a link
+.btn-link {
+	color: $primary-color;
+
+  
+	&:hover,
+	&:focus {
+		color: $navbar-default-link-hover-bg;
+	}
+
+}
+
