@@ -1,0 +1,70 @@
+
+
+/*	Panels
+___________________________________________________________*/
+
+
+// Optional heading
+
+
+.panel-large .panel-heading {
+	padding: $baseunit /1.5 15px;
+}
+
+.panel-white .panel-heading{
+	background-color: white;
+}
+
+.panel-body-grey {
+	background-color: $grey-light;
+}
+
+.panel-footer-white {
+	background-color: white;
+}
+
+.panel-connected {
+	border-bottom-right-radius: 0;
+	border-bottom-left-radius: 0;
+	border-top-right-radius: 0;
+	border-top-left-radius: 0;
+	margin-bottom: -1px;
+
+	.panel-title {
+		border-bottom: 1px solid #ebeeef;
+		padding-bottom: 16px;
+	}
+
+	.panel-heading{
+		padding: $baseunit  /1.5 15px 0px 15px;
+		border-bottom-width: 0px;
+		@include linear-gradient(white, $grey-light); // Stick in your favourite HEX colours
+
+
+	}
+}
+
+.panel-connected:first-child {
+	border-top-right-radius: 5px;
+	border-top-left-radius: 5px;
+
+	.panel-title {
+		border-bottom: 0px solid #ebeeef;
+		padding-bottom: 0px;
+	}
+
+	.panel-heading{
+		padding: $baseunit /1.5 15px;
+		border-bottom-width: 1px;
+		@include linear-gradient(white, white); // Stick in your favourite HEX colours
+	}
+}
+
+.panel-connected:last-child {
+	border-bottom-right-radius: 5px;
+	border-bottom-left-radius: 5px;
+}
+
+
+
+

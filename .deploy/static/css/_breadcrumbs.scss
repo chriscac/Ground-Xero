@@ -1,0 +1,28 @@
+
+/*	Breadcrumbs
+___________________________________________________________*/
+
+.breadcrumb {
+	font-size: 10px;
+	line-height: 1;
+	padding-left: 0px;
+	padding-right: 0px;
+	background-color: $breadcrumb-bg;
+	margin-bottom: 0px;
+
+    > li {
+    	color: red;
+	    
+	    + li:before {
+			content: "\e080"; // Unicode space added since inline-block means non-collapsing white-space
+			font-family: 'Glyphicons Halflings';
+			-webkit-font-smoothing: antialiased;
+			font-size: 6px;
+			color: $breadcrumb-seperator-color;
+		}
+	}	
+
+	> .active {
+		color: $breadcrumb-active-color;
+	}
+}

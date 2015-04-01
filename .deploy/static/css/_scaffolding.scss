@@ -1,0 +1,15 @@
+
+/*	Scaffolding
+___________________________________________________________*/
+
+
+a {
+	color: $primary-color;
+
+	&:hover,
+	&:focus {
+		color: darken($primary-color, 6.5%);
+	}
+
+}
+
