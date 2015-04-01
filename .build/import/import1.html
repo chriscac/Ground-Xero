@@ -9,13 +9,18 @@
 		<!-- Bootstrap -->
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
-		<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+
+		<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.6.3/css/bootstrap-select.min.css">
+
+
 
 		<!-- Animate.css -->
 		<link rel="stylesheet" href="/static/css/animate.css">
 
 		<link rel="shortcut icon" href="/static/images/favicon.ico">
 		<link rel="stylesheet" href="/static/css/style.css">
+
 
 
 
@@ -141,23 +146,43 @@
 								
 								<h5><span class="text-light">1.</span> <span class="padleft-md-10px">Download the fixed assets template</span></h5>
 								<div class="padleft-md-24px">
-									<p>This template has the requited column heading Xero need to correctly import your fixed assets.</p>
+									<p>This template has the required column headings Xero need to correctly import your fixed assets.</p>
 									<p><span class="glyphicon glyphicon-cloud-download text-success"></span> <a class="padleft-md-10px ">Download Template</a></p>
 								</div>
 								
 								<hr>
 
-								<h5><span class="text-light">2.</span> <span class="padleft-md-10px">Copy your fixed assets into the template</span></h5>
+								<h5><span class="text-light">2.</span> <span class="padleft-md-10px">Ensure asset types exist</span></h5>
+								<div class="padleft-md-24px">
+									<p>Go to the <a href="#">Fixed Assets Settings</a> page to review the list of existing asset types. Please create any asset types you may require before importing your file.</p>
+								</div>
+
+								<hr>
+
+								<h5><span class="text-light">3.</span> <span class="padleft-md-10px">Copy your fixed assets into the template</span></h5>
 								<div class="padleft-md-24px">
 									<p>Using Excel or another spreadsheet editor, fill the Xero template with your own data. Make sure this matches the column headings provided in the template. Columns marked with an asterisk * are mandatory.</p>
 								</div>
 
 								<hr>
 
-								<h5><span class="text-light">3.</span> <span class="padleft-md-10px">Upload the updated template file</span></h5>
+								<h5><span class="text-light">4.</span> <span class="padleft-md-10px">Select date format and upload the updated template file</span></h5>
 								<div class="padleft-md-24px">
-									<p>Save your updated template as a <strong>.csv</strong> or <strong>.txt</strong> and you’re ready to go:</p>
+									<p>Configure your date formatting and upload your updated template as a <strong>.csv</strong> or <strong>.txt</strong> and you’re ready to go:</p>
+									
+									<div class="row">
+										<div class="form-group col-sm-4">
+											<select class="form-control selectpicker" >
+												<option>dd/mm/yy</option>
+												<option>mm/dd/yy</option>
+												<option>dd/mm/yy</option>
+												<option>mm/dd/yy</option>
+											</select>
+										</div>
 									<div class="btn btn-default">Browse</div>
+
+									</div>
+
 								</div>
 
 							</div>
@@ -169,6 +194,8 @@
 				<div class="panel-footer panel-footer-white clearfix">
 
 					<div class="navbar-right">
+
+						<button class="btn btn-link">View support pages</button> 
 
 						<button id="submit1" class="btn btn-primary">Continue</button>
 						<button  class="btn btn-default">Cancel</button>
@@ -290,6 +317,55 @@
 
 
 
+	<!-- Import 3 -->
+	<div id="import3" class="row hidden">
+		<div class="col-sm-6">
+
+		<div class="panel panel-default panel-large panel-white panel-connected">
+			<div class="panel-heading">
+				<h4 class="panel-title">Import Summary</h4>
+			</div>
+			
+			<div class="panel-body panel-body-grey">
+				<form role="form">
+
+				  	<div class="row">
+						<div class="col-sm-12">
+
+				  			<h5><span class="fa  fa-info text-warning"></span> <span class="padleft-md-10px">You have 5 warnings</span></h5>
+							<div class="padleft-md-24px">
+								<p>•  <span class="padleft-md-10px">Row 1: Asset name must not be blank</span></p>
+								<p>•  <span class="padleft-md-10px">Row 2: Asset name must not be blank</span></p>
+								<p>•  <span class="padleft-md-10px">Row 3: Asset name must not be blank</span></p>
+								<p>•  <span class="padleft-md-10px">Row 4: Asset name must not be blank</span></p>
+							</div>
+
+							<hr class="hr-white mrgtop-none">
+						
+							<h5><span class="fa   fa-check text-success"></span> <span class="padleft-md-10px">873 rows are ready to be imported</span></h5>
+	
+
+
+						</div>
+				  	</div>
+
+				</form>
+			</div>
+
+			<div class="panel-footer panel-footer-white clearfix">
+
+				<div class="navbar-right">
+
+					<button id="submit3" class="btn btn-success">Import</button>
+					<button class="btn btn-default">Cancel</button>
+
+
+				</div>
+			</div>
+		</div>
+		</div><!-- /.cols -->
+	</div><!-- /.row -->
+
 
 </div><!-- /.container -->
 
@@ -299,6 +375,7 @@
 <!-- UIland Blocks -->
 
 <code>
+
 	clicking on "#submit1" toggles class "hidden" on "#import1"
 	group"
 
@@ -311,6 +388,9 @@
 	clicking on "#submit2" toggles class "hidden" on "#import2"
 	group"
 
+	clicking on "#submit2" toggles class "hidden" on "#import3"
+	group"
+
 </code>
 
 
@@ -320,6 +400,8 @@
 		<script src="/static/js/main.js"></script>
 		<script src="/static/js/uilang.js"></script>
 		<script src="/static/js/fileinput.js"></script>
+		<!--  <script src="//cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.6.3/js/bootstrap-select.min.js"></script> -->
+
 		
 		
 
