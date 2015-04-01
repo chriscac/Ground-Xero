@@ -163,6 +163,16 @@ ___________________________________________________________*/
 	padding-bottom: $baseunit * 7;
 }
 
+
+.padleft-md-10px{
+	padding-left: 10px;
+}
+
+.padleft-md-24px{
+	padding-left: 24px;
+}
+
+
 @media only screen and (max-width: $screen-sm){
 	
 	.padtop-xs-0{
@@ -255,15 +265,15 @@ ___________________________________________________________*/
 
 
 .dev-border{
-		border: 1px solid red;
+		outline: 1px solid red;
 	}
 
 	.dev-border:nth-of-type(2){
-		border: 1px solid green;
+		outline: 1px solid green;
 	}
 
 	.dev-border:nth-of-type(3){
-		border: 1px solid blue;
+		outline: 1px solid blue;
 	}
 
 
