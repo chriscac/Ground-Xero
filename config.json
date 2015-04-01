@@ -1,1 +1,6 @@
-{"port":8857}
+{
+    "aws-access-key": "AKIAIV6XYSA3FIVDGU3A",
+    "aws-bucket-name": "chriscac",
+    "aws-bucket-website": "chriscac.s3-website-us-east-1.amazonaws.com",
+    "port": 8857
+}
