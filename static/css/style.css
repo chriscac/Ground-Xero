@@ -3,9 +3,9 @@ ___________________________________________________________*/
 /*	Scaffolding
 ___________________________________________________________*/
 a {
-  color: #1890c0; }
+  color: #048fc2; }
   a:hover, a:focus {
-    color: #147aa3; }
+    color: #0377a2; }
 
 body {
   -webkit-font-smoothing: antialiased;
@@ -17,6 +17,9 @@ h2 {
 .text-light {
   font-weight: 200; }
 
+.text-primary {
+  color: #048fc2; }
+
 .text-success {
   color: #3ac768; }
 
@@ -27,16 +30,16 @@ h2 {
   color: #fd6720; }
 
 .navbar-default {
-  background-color: #1890c0;
+  background-color: #048fc2;
   border-color: white;
-  color: #1890c0; }
+  color: #048fc2; }
   .navbar-default .navbar-brand {
     color: white; }
     .navbar-default .navbar-brand:hover, .navbar-default .navbar-brand:focus {
       color: white;
-      background-color: #147aa3; }
+      background-color: #0377a2; }
   .navbar-default hr {
-    border-top: solid 1px #147aa3;
+    border-top: solid 1px #0377a2;
     opacity: .4;
     margin-bottom: -1px;
     margin-top: 0px; }
@@ -44,9 +47,9 @@ h2 {
     color: white; }
     .navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus {
       color: white;
-      background-color: #147aa3; }
+      background-color: #0377a2; }
   .navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus {
-    color: #1890c0;
+    color: #048fc2;
     background-color: white; }
 
 .navbar-secondary {
@@ -339,7 +342,7 @@ ___________________________________________________________*/
     border-bottom: 0px solid #ebeeef;
     padding-bottom: 0px; }
   .panel-connected:first-child .panel-heading {
-    padding: 16px 15px;
+    padding: 12px 10px;
     border-bottom-width: 1px;
     background-color: white;
     /* Fallback Color */
@@ -361,12 +364,11 @@ ___________________________________________________________*/
   border-bottom-left-radius: 5px; }
 
 .btn-link {
-  color: #1890c0; }
+  color: #048fc2; }
   .btn-link:hover, .btn-link:focus {
-    color: #147aa3; }
+    color: #0377a2; }
 
 .table {
-  border: 1px solid #e6e6e6;
   border-radius: 8px; }
 
 .table > thead > tr > td,
@@ -382,9 +384,9 @@ ___________________________________________________________*/
 
 .table-hover > tbody > tr:hover > td,
 .table-hover > tbody > tr:hover > th {
-  background-color: #eef9fd;
-  border-top: 1px solid #dcf2fb;
-  border-bottom: 1px solid #dcf2fb;
+  background-color: #dbf5fe;
+  border-top: 1px solid #c7effe;
+  border-bottom: 1px solid #c7effe;
   cursor: pointer; }
 
 .table.rowlink td:not(.rowlink-skip), .table .rowlink td:not(.rowlink-skip) {
@@ -394,6 +396,21 @@ ___________________________________________________________*/
   color: inherit;
   font: inherit;
   text-decoration: inherit; }
+
+.table > thead > tr > th {
+  background-color: #fafbfb;
+  border-bottom-width: 0px; }
+
+tbody {
+  border-top-style: none; }
+
+/*	Modals
+___________________________________________________________*/
+.modal-dialog {
+  margin-top: 72px; }
+
+.modal-sm {
+  width: 450px; }
 
 .opacity-50 {
   opacity: 0.5; }

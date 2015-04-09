@@ -1,6 +1,6 @@
 
 .table{
-	border: 1px solid $grey-mid;
+	// border: 1px solid $grey-mid;
 	border-radius: 8px;
 }
 
@@ -50,4 +50,13 @@
     color: inherit;
     font: inherit;
     text-decoration: inherit
+}
+
+.table > thead > tr > th {
+	background-color: $grey-light;
+	border-bottom-width: 0px;
+}
+
+tbody{
+	border-top-style: none;
 }

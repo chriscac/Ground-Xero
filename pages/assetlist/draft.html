@@ -1,0 +1,209 @@
+pageTitle: Draft Assets
+
+
+{% extends "base.html" %}
+{% block content %}
+
+
+{% include 'secondarynav.html' %}
+
+
+
+<div class="container">
+	
+	<!-- Import 1 -->
+	<div id="draftsList" class="row">
+		<div class="col-sm-12">
+
+			<!-- Panel -->
+			<div class="panel panel-default panel-large panel-white panel-connected">
+				<div class="panel-heading">
+				  <button  id="delete" type="button" class="btn btn-default btn-sm disabled">Delete</button>
+				  <button  id="bulkRegister" type="button" class="btn btn-default btn-sm disabled" data-toggle="modal" data-target=".bs-example-modal-sm">Register</button>
+				</div>
+				
+					
+				<table class="table table-hover ">
+					<thead class="padbtm-4">
+						<tr>
+							<th class="rowlink-skip">
+								<!-- Checkbox -->
+								<input id="selectAll" type="checkbox">
+						  	</th>
+							<th><span class="text-primary">Asset Name</span></th>
+							<th><span class="text-primary">Asset Number</span></th>
+							<th><span class="text-primary">Asset Type</span></th>
+							<th><span class="text-primary">Purchase Date</span></th>
+							<th><span class="text-primary">Purchase Price</span></th>
+						</tr>
+					</thead>
+
+
+
+					<tbody class="">
+						<tr id="assetGood" data-link="row" class="rowlink animated">
+							<td class="rowlink-skip">
+								<!-- Checkbox -->
+								<input id="checkbox1" type="checkbox" class="">
+								<input id="checkbox2" type="checkbox" class="hidden" checked>
+						  	</td>
+							<td><a href="http://www.apple.com"> Macbook Pro</a></td>
+							<td><span class="text-primary">FA-0001</span></td>
+							<td>Computer Equiptment</td>
+							<td>Feb 11, 2015</td>
+							<td>3,549</td>
+						</tr>
+
+						<tr  id="assetGood" data-link="row" class="rowlink animated">
+							<td class="rowlink-skip">
+								<!-- Checkbox -->
+								<input id="checkbox1" type="checkbox" class="">
+								<input id="checkbox2" type="checkbox" class="hidden" checked>
+						  	</td>
+							<td><a href="http://www.apple.com"> Macbook Pro</a></td>
+							<td><span class="text-primary">FA-0002</span></td>
+							<td>Computer Equiptment</td>
+							<td>Feb 11, 2015</td>
+							<td>3,549</td>
+						</tr>									
+
+
+						<tr data-link="row" class="rowlink">
+							<td class="rowlink-skip">
+								<!-- Checkbox -->
+								<input id="checkbox1" type="checkbox" class="">
+								<input id="checkbox2" type="checkbox" class="hidden" checked>
+						  	</td>
+							<td><a href="http://www.apple.com"> Macbook Pro</a></td>
+							<td><span class="text-primary">FA-0003</span></td>
+							<td> </td>
+							<td>Feb 11, 2015</td>
+							<td>3,549</td>
+						</tr>
+
+
+						<tr data-link="row" class="rowlink">
+							<td class="rowlink-skip">
+								<!-- Checkbox -->
+								<input id="checkbox1" type="checkbox" class="">
+								<input id="checkbox2" type="checkbox" class="hidden" checked>
+						  	</td>
+							<td><a href="http://www.apple.com">BW Amp</a></td>
+							<td><span class="text-primary">FA-0004</span></td>
+							<td> </td>
+							<td>Feb 11, 2015</td>
+							<td>1,000</td>
+						</tr>
+
+						<tr data-link="row" class="rowlink">
+							<td class="rowlink-skip">
+								<!-- Checkbox -->
+								<input id="checkbox1" type="checkbox" class="">
+								<input id="checkbox2" type="checkbox" class="hidden" checked>
+						  	</td>
+							<td><a href="http://www.apple.com">BW Amp</a></td>
+							<td><span class="text-primary">FA-0005</span></td>
+							<td> </td>
+							<td>Feb 11, 2015</td>
+							<td>14,500</td>
+						</tr>
+
+					</tbody>
+			    </table>
+
+
+				</div>
+
+			</div>
+			<!-- //////Panel -->
+
+			<!-- Small modal -->
+			<div class="modal fade bs-example-modal-sm " tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
+				
+				<div id="modalContainer" class="modal-dialog modal-sm">
+					<div class="modal-content">
+						
+						<div id="modal1" class="">
+							<div class="modal-header">
+								<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+								<h4 class="modal-title">Register 5 Draft Assets</h4>
+							</div>
+							
+							<div class="modal-body">
+								<p>Are you sure you want to register the selected items?<br>This may take a few minutes to process.</p>
+							</div>
+						</div>
+
+
+						<div id="modal2" class="hidden">
+							
+							<div class="modal-header">
+								<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+								<h4 class="modal-title">Register Summary</h4>
+							</div>
+							
+							<div class="modal-body heightmax-650">		
+								<h5><span class="fa fa-check text-success"></span> <span class="padleft-md-10px">2 Assets have sucessfully been registered</span></h5>
+
+								<hr class="hr-white mrgtop-none">
+
+								<h5><span class="fa fa-remove text-danger"></span> <span class="padleft-md-10px">3 Assets failed to register</span></h5>
+								<div class="padleft-md-24px">
+									<p>•  <span class="padleft-md-10px">Macbook Pro FA-0004: Asset type must not be blank</span></p>
+									<p>•  <span class="padleft-md-10px">BW Amp FA-0005: Asset type must not be blank</span></p>
+									<p>•  <span class="padleft-md-10px">BW Amp FA-0006: Asset type must not be blank</span></p>
+								</div>
+
+								<br>
+							</div>
+						</div>
+
+						<div class="modal-footer">
+							<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+							<button id="modalRegister" type="button" class="btn btn-primary">Register Assets</button>
+							<button id="modalTryAgain" type="button" class="btn btn-primary hidden">Try Again</button>
+						</div>
+						
+					</div><!-- /.modal-content -->
+				</div><!-- /.modal-dialog -->
+
+			</div>
+			<!-- /////Modal -->
+
+		</div><!-- /.cols -->
+	</div><!-- /.row -->
+
+
+
+
+
+<!-- UIland Blocks -->
+
+<code>
+
+	clicking on "#selectAll" toggles class "hidden" on "#checkbox1"
+	
+	clicking on "#selectAll" toggles class "hidden" on "#checkbox2"
+
+	clicking on "#selectAll" toggles class "disabled" on "#bulkRegister"
+
+	clicking on "#selectAll" toggles class "disabled" on "#delete"
+
+	clicking on "#modalRegister" toggles class "hidden" on "#modal1"
+
+	clicking on "#modalRegister" toggles class "modal-sm" on "#modal1"
+
+	clicking on "#modalRegister" toggles class "hidden" on "#modal2"
+
+	<!-- clicking on "#modalRegister" toggles class "modal-sm" on "#modalContainer"  -->
+
+	clicking on "#modalRegister" toggles class "hidden" on "#modalRegister"
+	
+	clicking on "#modalRegister" toggles class "hidden" on "#assetGood"
+
+	clicking on "#modalRegister" toggles class "hidden" on "#modalTryAgain"
+
+
+</code>
+
+{% endblock content%}

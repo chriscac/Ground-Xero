@@ -54,7 +54,7 @@ ___________________________________________________________*/
 	}
 
 	.panel-heading{
-		padding: $baseunit /1.5 15px;
+		padding: $baseunit /2 10px;
 		border-bottom-width: 1px;
 		@include linear-gradient(white, white); // Stick in your favourite HEX colours
 	}
