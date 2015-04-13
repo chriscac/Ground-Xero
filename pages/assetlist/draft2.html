@@ -8,8 +8,19 @@ pageTitle: Draft Assets
 {% include 'secondarynav.html' %}
 
 
-
 <div class="container">
+
+	
+	<div id="alert" class="alert animated fadeInDown hidden alert-danger alert-dismissable col-md-3 hoz-center position-absolute" role="alert">
+		<button type="button" class="close" data-dismiss="alert" aria-label="Close">
+			<span aria-hidden="true">&times;</span>
+		</button>
+
+		<span class="fa fa-remove" aria-hidden="true"></span>
+		<span class="sr-only">Error:</span>
+		The 3 assets could not be registered
+
+	</div>
 	
 	<!-- Import 1 -->
 	<div id="draftsList" class="row">
@@ -68,7 +79,7 @@ pageTitle: Draft Assets
 						</tr>									
 
 
-						<tr data-link="row" class="rowlink">
+						<tr id="assetBad" data-link="row" class="rowlink">
 							<td class="rowlink-skip">
 								<!-- Checkbox -->
 								<input id="checkbox1" type="checkbox" class="">
@@ -82,7 +93,7 @@ pageTitle: Draft Assets
 						</tr>
 
 
-						<tr data-link="row" class="rowlink">
+						<tr id="assetBad" data-link="row" class="rowlink">
 							<td class="rowlink-skip">
 								<!-- Checkbox -->
 								<input id="checkbox1" type="checkbox" class="">
@@ -95,7 +106,7 @@ pageTitle: Draft Assets
 							<td>1,000</td>
 						</tr>
 
-						<tr data-link="row" class="rowlink">
+						<tr id="assetBad" data-link="row" class="rowlink">
 							<td class="rowlink-skip">
 								<!-- Checkbox -->
 								<input id="checkbox1" type="checkbox" class="">
@@ -103,9 +114,9 @@ pageTitle: Draft Assets
 						  	</td>
 							<td><a href="http://www.apple.com">BW Amp</a></td>
 							<td><span class="text-primary">FA-0005</span></td>
-							<td> </td>
+							<td>Motor Vehicle</td>
 							<td>Feb 11, 2015</td>
-							<td>14,500</td>
+							<td></td>
 						</tr>
 
 					</tbody>
@@ -123,67 +134,19 @@ pageTitle: Draft Assets
 				<div id="modalContainer" class="modal-dialog modal-sm">
 					<div class="modal-content">
 						
-						<div id="modal1" class="">
-							<div class="modal-header">
-								<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-								<h4 class="modal-title">Register 5 Draft Assets</h4>
-							</div>
-							
-							<div class="modal-body">
-								<p>Are you sure you want to register the selected items?<br>This may take a few minutes to process.</p>
-							</div>
+						<div class="modal-header">
+							<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+							<h4 class="modal-title">Register 5 Draft Assets</h4>
+						</div>
+						
+						<div class="modal-body">
+							<p>Are you sure you want to register the selected items?<br>This may take a few minutes to process.</p>
 						</div>
 
-
-						<div id="modal2" class="hidden">
-							
-							<div class="modal-header">
-								<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-								<h4 class="modal-title">Register Summary</h4>
-							</div>
-							
-							<div class="modal-body heightmax-650">		
-								<h5><span class="fa fa-check text-success"></span> <span class="padleft-md-10px">2 Assets have sucessfully been registered</span></h5>
-
-								<hr class="hr-white mrgtop-none">
-
-								<h5><span class="fa fa-remove text-danger"></span> <span class="padleft-md-10px">3 Assets failed to register</span></h5>
-								<div class="padleft-md-24px">
-									<p>•<a href="https://fixedassets.branch27.test.xero.com/#asset" class="padleft-md-10px" target="_blank">Macbook Pro FA-0004:</a> <br>
-									<span class="padleft-md-10px mrgtop-none">&nbsp Asset type must not be blank</span><br>
-									<span class="padleft-md-10px mrgtop-none">&nbsp Purchase price must not be blank</span>
-									</p>
-
-									<p>•<a href="https://fixedassets.branch27.test.xero.com/#asset" class="padleft-md-10px" target="_blank">Macbook Pro FA-0005:</a><br>
-									<span class="padleft-md-10px">&nbsp Asset type must not be blank</span>
-									</p>
-
-									<p>•<a href="https://fixedassets.branch27.test.xero.com/#asset" class="padleft-md-10px" target="_blank">Macbook Pro FA-0006:</a><br>
-									<span class="padleft-md-10px">&nbsp Asset type must not be blank</span>
-									</p>
-
-									<p>•<a href="https://fixedassets.branch27.test.xero.com/#asset" class="padleft-md-10px" target="_blank">Macbook Pro FA-0004:</a> <br>
-									<span class="padleft-md-10px mrgtop-none">&nbsp Asset type must not be blank</span><br>
-									<span class="padleft-md-10px mrgtop-none">&nbsp Purchase price must not be blank</span>
-									</p>
-
-									<p>•<a href="https://fixedassets.branch27.test.xero.com/#asset" class="padleft-md-10px" target="_blank">Macbook Pro FA-0005:</a><br>
-									<span class="padleft-md-10px">&nbsp Purchase price must not be blank</span>
-									</p>
-
-									<p>•<a href="https://fixedassets.branch27.test.xero.com/#asset" class="padleft-md-10px" target="_blank">Macbook Pro FA-0006:</a><br>
-									<span class="padleft-md-10px">&nbsp Asset type must not be blank</span>
-									</p>									
-								</div>
-
-								<br>
-							</div>
-						</div>
 
 						<div class="modal-footer">
 							<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-							<button id="modalRegister" type="button" class="btn btn-primary">Register Assets</button>
-							<button id="modalTryAgain" type="button" class="btn btn-primary hidden">Ok</button>
+							<button id="modalRegister" type="button" class="btn btn-primary" data-dismiss="modal">Register Assets</button>
 						</div>
 						
 					</div><!-- /.modal-content -->
@@ -194,8 +157,6 @@ pageTitle: Draft Assets
 
 		</div><!-- /.cols -->
 	</div><!-- /.row -->
-
-
 
 
 
@@ -215,15 +176,21 @@ pageTitle: Draft Assets
 
 	clicking on "#modalRegister" toggles class "modal-sm" on "#modal1"
 
-	clicking on "#modalRegister" toggles class "hidden" on "#modal2"
+	clicking on "#modalRegister" toggles class "hidden" on "#alert"
 
-	<!-- clicking on "#modalRegister" toggles class "modal-sm" on "#modalContainer"  -->
+	clicking on "#modalRegister" toggles class "hidden" on "#assetGood"
+
+	clicking on "#modalRegister" toggles class "info" on "#assetBad"
+
+
+
+<!-- 	clicking on "#modalRegister" toggles class "modal-sm" on "#modalContainer" 
 
 	clicking on "#modalRegister" toggles class "hidden" on "#modalRegister"
 	
 	clicking on "#modalRegister" toggles class "hidden" on "#assetGood"
 
-	clicking on "#modalRegister" toggles class "hidden" on "#modalTryAgain"
+	clicking on "#modalRegister" toggles class "hidden" on "#modalTryAgain" -->
 
 
 </code>
