@@ -6,6 +6,11 @@
         <priority>1.0</priority>
     </url>
     <url>
+        <loc>/assetlist/draft2.html</loc>
+        <changefreq>daily</changefreq>
+        <priority>1.0</priority>
+    </url>
+    <url>
         <loc>/import/import1.html</loc>
         <changefreq>daily</changefreq>
         <priority>1.0</priority>
